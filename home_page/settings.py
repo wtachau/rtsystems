@@ -78,10 +78,11 @@ USE_L10N = True
 
 USE_TZ = True
 
+ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
-STATIC_URL = '/sstatic/'
+STATIC_URL = '/static/'
 if not DEBUG:
-    STATIC_URL = 'https://s3.amazonaws.com/rtsystemsresources/'
+    STATIC_URL = 'https://s3-us-west-1.amazonaws.com/rtsystemsresources/'
 
