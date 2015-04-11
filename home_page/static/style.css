@@ -2,7 +2,7 @@
 .teamMember img {
     width: 80%;
     border-radius: 10%;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -556,6 +556,7 @@ p.bold{
 }
 #about .container{
     padding-top:200px;
+    padding-bottom: 0px;
 }
 
 
