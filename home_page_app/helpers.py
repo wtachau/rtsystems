@@ -6,6 +6,8 @@ from email.mime.text import MIMEText
 
 def send_email(data):
 
+	print "hey"
+
 	gmail_user = "rtsystemsbot@gmail.com"
 	gmail_pwd = "xr1WG5Nk"
 	FROM = 'rtsystemsbot@gmail.com'
