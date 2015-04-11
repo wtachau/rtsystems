@@ -1,15 +1,13 @@
 # Import smtplib for the actual sending function
 import smtplib
 import sys
+import logging
 
 # Import the email modules we'll need
 from email.mime.text import MIMEText
 
 def send_email(data):
-	import logging
 	logger = logging.getLogger('testlogger')
-	
-	logger.info('whee')
 
 	gmail_user = "rtsystemsbot@gmail.com"
 	gmail_pwd = "xr1WG5Nk"

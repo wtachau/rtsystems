@@ -21,15 +21,10 @@ def whoweare(request):
 	return render(request, 'whoweare.html')
 
 def contact(request):
-	import logging
-	logger = logging.getLogger('testlogger')
-	logger.info('This is a simple log message')
 	c = {}
 	c.update(csrf(request))
 	return render_to_response("contact.html", c)
 
 def contactus(request):
-	print request
-	print "***"
 	send_email(request.POST)
 	return HttpResponse("<h2>Email Sent Successfully.</h2><p>Thank you <strong>"+ request.POST['name']+"</strong>, your message has been sent to us.</p>")
