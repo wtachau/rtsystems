@@ -21,6 +21,9 @@ def whoweare(request):
 	return render(request, 'whoweare.html')
 
 def contact(request):
+	import logging
+	logger = logging.getLogger('testlogger')
+	logger.info('This is a simple log message')
 	c = {}
 	c.update(csrf(request))
 	return render_to_response("contact.html", c)
