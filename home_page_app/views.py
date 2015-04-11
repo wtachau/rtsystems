@@ -7,6 +7,8 @@ from django.template import RequestContext
 
 from helpers import *
 
+import sys
+
 # Create your views here.
 
 def home(request):
