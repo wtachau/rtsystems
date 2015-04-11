@@ -7,7 +7,8 @@ from email.mime.text import MIMEText
 
 def send_email(data):
 
-	sys.stdout.flush()
+	logger = logging.getLogger('testlogger')
+	
 
 	gmail_user = "rtsystemsbot@gmail.com"
 	gmail_pwd = "xr1WG5Nk"
@@ -29,5 +30,7 @@ def send_email(data):
 		#server.quit()
 		server.close()
 		print 'successfully sent the mail'
+		logger.info('successfully sent the mail')
 	except:
 		print "failed to send mail"
+		logger.info('successfully sent the mail')
