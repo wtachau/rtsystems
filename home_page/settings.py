@@ -21,7 +21,7 @@ SECRET_KEY = '1+h*1f$bdqhjoopx(jf=&6)5&2zr&q=0n&43rn(0th1$1bw-qk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 import sys
-DEBUG = (sys.argv[1] == 'runserver')
+DEBUG = (len(sys.argv) > 1 and sys.argv[1] == 'runserver')
 
 TEMPLATE_DEBUG = True
 

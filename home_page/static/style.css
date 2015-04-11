@@ -1,3 +1,15 @@
+/* CUSTOM */
+.teamMember img {
+    width: 80%;
+    border-radius: 10%;
+    padding-bottom: 30px;
+}
+
+
+
+
+
+/* STANDARD */
 html,
 body {
     width:100%;
@@ -409,9 +421,12 @@ p.bold{
 }
 
 .introLogo{
-    position:relative;
-    width:160px;
-    margin-bottom:20px;
+      position: relative;
+      width: 190px;
+      margin-bottom: 20px;
+      background-color: rgba(1,1,1,.5);
+      border-radius: 60px;
+      padding: 25px;
 }
 
 #intro .separator{
