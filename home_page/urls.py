@@ -10,5 +10,6 @@ urlpatterns = patterns('',
     url(r'^$', home),
     url(r'^about', about),
     url(r'^whoweare', whoweare),
-    url(r'^contact', contact)
+    url(r'^contact$', contact),
+    url(r'^contactus$', contactus)
 )
