@@ -33,6 +33,7 @@ $(document).ready(function () {
                     email: $('#email').val(),
                     phone: $('#phone').val(),
                     comments: $('#comments').val(),
+                    csrfmiddlewaretoken: $("input[name='csrfmiddlewaretoken']").val()
                 },
                 function(data){
                     document.getElementById('result').innerHTML = data;

@@ -1,12 +1,14 @@
 {% extends 'main.html' %}
 {% load staticfiles %}
 
+{% block offset %}50{% endblock %}
 {% block home %}active{% endblock %}
 {% block content %}
+
 <!--preloader-->
 <div class="ip-header">
     <div class="ip-logo">
-        <img class="img-responsive preloaderLogo center-block" src="{% static 'img/logoWhite.png'%}" alt="preloader">
+        <img class="img-responsive preloaderLogo center-block" src="{% static 'img/logoWhite.png' %}" alt="preloader">
     </div>
 
     <div class="ip-loader">
@@ -17,6 +19,7 @@
     </div>
 </div>
 <!--end preloader-->
+
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--/* Intro  */-->
